@@ -97,7 +97,7 @@ def proc(cat, type):
 	
 	#write to image
 	wc.to_file(imageFile)
-	print(now()+'image File saved:' + imageFile+'\n')
+	print(now()+' image File saved:' + imageFile+'\n')
 
 #main entry	
 print(now()+' total started.')
