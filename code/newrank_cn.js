@@ -4,7 +4,7 @@
 const puppeteer = require('puppeteer');
 //emulate iphone
 const userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36';
-const workPath = './newrank_cn1111';
+const workPath = 'T:/Developer/github/wechat-ranking/data/201808';
 const fs = require("fs");
 const userName = "公众号";
 const ppwwdd = "caiyongji";
@@ -21,7 +21,7 @@ const detailUrl = "https://www.newrank.cn/public/info/detail.html?account=";
 
     const browser = await puppeteer.launch({headless: false});//set headless: true will hide chromium UI
     const page = await browser.newPage();
-    await page.setUserAgent(userAgent);
+    //await page.setUserAgent(userAgent);
 	await page.setViewport({width:1920, height:1000});
     await page.setRequestInterception(true);
 	
